@@ -32,47 +32,64 @@ function handleSubmit(event) {
         let link = document.createElement('a')
         link.textContent = ("your facility does't need any solar panel");
          document.getElementById('result').appendChild(link);
+         solarForm.removeEventListener('submit', handleSubmit);
+
     } else if(1000 < x < 2000){
 
         let link = document.createElement('a')
         link.textContent = ('Your facility needs a solar panel with a ' + Math.floor(x) + ' Watt with '+ Math.ceil(w) + ' solar panels with capaility of 350 watt of each panel.');
          document.getElementById('result').appendChild(link);
+         solarForm.removeEventListener('submit', handleSubmit);
+
 
     }else if (2000 < x < 3000){
         let link = document.createElement('a')
         link.textContent = ('Your facility needs a solar panel with a ' + Math.floor(x) + ' Watt with '+ Math.ceil(w) + ' solar panels with capaility of 350 watt of each panel.');
          document.getElementById('result').appendChild(link);
+         solarForm.removeEventListener('submit', handleSubmit);
+
 
     }else if (3000 < x < 4000){
         let link = document.createElement('a')
         link.textContent = ('Your facility needs a solar panel with a ' + Math.floor(x) + ' Watt with '+ Math.ceil(w) + ' solar panels with capaility of 350 watt of each panel.');
          document.getElementById('result').appendChild(link);
+         solarForm.removeEventListener('submit', handleSubmit);
+
 
 
     }else if (4000 < x < 5000){
         let link = document.createElement('a')
         link.textContent = ('Your facility needs a solar panel with a ' + Math.floor(x) + ' Watt with '+ Math.ceil(w) + ' solar panels with capaility of 350 watt of each panel.');
          document.getElementById('result').appendChild(link);
+         solarForm.removeEventListener('submit', handleSubmit);
+
 
 
     }else if (5000 < x < 6000){
         let link = document.createElement('a')
         link.textContent = ('Your facility needs a solar panel with a ' + Math.floor(x) + ' Watt with '+ Math.ceil(w) + ' solar panels with capaility of 350 watt of each panel.');
          document.getElementById('result').appendChild(link);
+         solarForm.removeEventListener('submit', handleSubmit);
+
 
 
     }else if (6000 < x < 7000){
         let link = document.createElement('a')
         link.textContent = ('Your facility needs a solar panel with a ' + Math.floor(x) + ' Watt with '+ Math.ceil(w) + ' solar panels with capaility of 350 watt of each panel.');
          document.getElementById('result').appendChild(link);
+         solarForm.removeEventListener('submit', handleSubmit);
+
 
 
     }else if (7000 < x < 8000){
         let link = document.createElement('a')
         link.textContent = ('Your facility needs a solar panel with a ' + Math.floor(x) + ' Watt with '+ Math.ceil(w) + ' solar panels with capaility of 350 watt of each panel.');
          document.getElementById('result').appendChild(link);
+         solarForm.removeEventListener('submit', handleSubmit);
+
 
     }
+
     console.log(Math.floor(x));
 
 }
