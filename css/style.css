@@ -1,5 +1,6 @@
 body{
     background-image:url(../img/1.jpg) ;
+
 }
 header{
     overflow: hidden;
@@ -97,6 +98,7 @@ input{
     margin-block: 40PX;
      margin-right: 700px;
      text-align: center;
+     font-weight: bolder;
 
 
 }
