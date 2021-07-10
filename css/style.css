@@ -1,0 +1,108 @@
+body{
+    background-image:url(../img/1.jpg) ;
+}
+header{
+    overflow: hidden;
+    background: black url(../img/2.jpg) left no-repeat;
+  background-color: #7cfd83;opacity: 0.8;
+  padding: 20px 10px;
+  border: 3px solid rgb(5, 5, 5);
+  border-radius: 10%;
+
+}
+header h1{
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+/* border: solid black; */
+/* background-color: rgb(248, 248, 248);opacity:1; */
+/* border-radius: 20%; */
+margin-left: 550px;
+margin-right: 550px;
+
+}
+#card{
+    background-color: #ffdddd;
+  border-left: 6px solid #f44336;
+  margin-block: 10PX; 
+  margin-right: 700px;
+
+}
+#card1{ background-color: #ddffdd;
+    border-left: 6px solid #04AA6D;
+    margin-block: 10PX; 
+    margin-right: 700px;
+
+}
+#card2{background-color: #e7f3fe;
+    border-left: 6px solid #2196F3;
+    margin-block: 10PX;
+    margin-right: 700px;
+ 
+}
+#card3{background-color: #ffffcc;
+    border-left: 6px solid #ffeb3b;
+    margin-block: 10PX;
+    margin-right: 700px;
+ 
+}
+#card4{background-color: #f382d7;
+    border-left: 6px solid #ff3bef;
+    margin-block: 10PX;
+    margin-right: 700px;
+ 
+}
+#card5{background-color: #84e8fa;
+    border-left: 6px solid #3bffad; 
+     margin-block: 10PX;
+     margin-right: 700px;
+ 
+}
+#card6{background-color: #f89f88;
+    border-left: 6px solid #ff3b45; 
+     margin-block: 10PX;
+     margin-right: 700px;
+ 
+}
+#card7{background-color: #f5f56b;
+    border-left: 6px solid #ffba3b; 
+     margin-block: 10PX;
+     margin-right: 700px;
+ 
+}
+form{
+    /* text-align: center; */
+
+    margin-right: 700px;
+    width: 450px;
+	font-size: 16px;
+	background: #495C70;
+	padding: 30px 30px 15px 30px;
+	border: 5px solid #53687E;
+
+}
+label{
+    display:block;
+	margin-bottom: 10px;
+}
+input{
+    background: #576E86;
+	padding: 8px 10px 8px 10px;
+	border-radius: 5px;
+	color: #050505;
+}
+#result{
+    background-color: rgb(199, 194, 194);
+    margin-block: 40PX;
+     margin-right: 700px;
+     text-align: center;
+
+
+}
+main h1{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+/* border: solid black; */
+    
+}
