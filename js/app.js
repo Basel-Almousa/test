@@ -3,11 +3,12 @@
 
 
 let solArr = [];
-function Solar(location, numberOfWatt) {
+function Solar(location, numberOfWatt, yourAmount) {
     this.location = location;
     this.numberOfWatt = numberOfWatt;
+    this.yourAmount = yourAmount;
     solArr.push(this);
-    
+
 }
 
 
@@ -33,85 +34,40 @@ function handleSubmit(event) {
     let a = p * 2;
 
 
-     let dv = document.getElementById('result');
-     dv.textContent = "";
+    let dv = document.getElementById('result');
+    dv.textContent = "";
     if (350 < newNumber) {
-        dv.textContent = ('Your facility need a solar system size of ' + Math.round(s*100.0)/100.0 + ' KW with an inverter of ' + Math.round(i*100.0)/100.0  + ' KW and ' + Math.round(p) + ' modules covering ' + Math.round(a) + ' square meter.');
-        
-        
-
-    } else{ 
-    dv.textContent = ("your facility does't need any solar panel");
-    
-}
+        dv.textContent = ('Your facility need a solar system size of ' + Math.round(s * 100.0) / 100.0 + ' KW with an inverter of ' + Math.round(i * 100.0) / 100.0 + ' KW and ' + Math.round(p) + ' modules covering ' + Math.round(a) + ' square meter.');
 
 
 
-// if (newNumber < 400) {
-//     let link = document.createElement('a')
-//     link.textContent = ("your facility does't need any solar panel");
-//      document.getElementById('result').appendChild(link);
-//      solarForm.removeEventListener('submit', handleSubmit);
+    } else {
+        dv.textContent = ("your facility does't need any solar panel");
 
-// } else if(400 < s < 500){
-
-//     let link = document.createElement('a')
-//     link.textContent = ('Your facility needs a solar panel with a ' + Math.floor(x) + ' Watt with '+ Math.ceil(w) + ' solar panels with capaility of 350 watt of each panel.');
-//      document.getElementById('result').appendChild(link);
-//      solarForm.removeEventListener('submit', handleSubmit);
-
-
-// }else if (500 < s < 3000){
-//     let link = document.createElement('a')
-//     link.textContent = ('Your facility needs a solar panel with a ' + Math.floor(x) + ' Watt with '+ Math.ceil(w) + ' solar panels with capaility of 350 watt of each panel.');
-//      document.getElementById('result').appendChild(link);
-//      solarForm.removeEventListener('submit', handleSubmit);
-
-
-// }else if (3000 < x < 4000){
-//     let link = document.createElement('a')
-//     link.textContent = ('Your facility needs a solar panel with a ' + Math.floor(x) + ' Watt with '+ Math.ceil(w) + ' solar panels with capaility of 350 watt of each panel.');
-//      document.getElementById('result').appendChild(link);
-//      solarForm.removeEventListener('submit', handleSubmit);
-
-
-
-// }else if (4000 < x < 5000){
-//     let link = document.createElement('a')
-//     link.textContent = ('Your facility needs a solar panel with a ' + Math.floor(x) + ' Watt with '+ Math.ceil(w) + ' solar panels with capaility of 350 watt of each panel.');
-//      document.getElementById('result').appendChild(link);
-//      solarForm.removeEventListener('submit', handleSubmit);
-
-
-
-// }else if (5000 < x < 6000){
-//     let link = document.createElement('a')
-//     link.textContent = ('Your facility needs a solar panel with a ' + Math.floor(x) + ' Watt with '+ Math.ceil(w) + ' solar panels with capaility of 350 watt of each panel.');
-//      document.getElementById('result').appendChild(link);
-//      solarForm.removeEventListener('submit', handleSubmit);
-
-
-
-// }else if (6000 < x < 7000){
-//     let link = document.createElement('a')
-//     link.textContent = ('Your facility needs a solar panel with a ' + Math.floor(x) + ' Watt with '+ Math.ceil(w) + ' solar panels with capaility of 350 watt of each panel.');
-//      document.getElementById('result').appendChild(link);
-//      solarForm.removeEventListener('submit', handleSubmit);
-
-
-
-// }else if (7000 < x < 8000){
-//     let link = document.createElement('a')
-//     link.textContent = ('Your facility needs a solar panel with a ' + Math.floor(x) + ' Watt with '+ Math.ceil(w) + ' solar panels with capaility of 350 watt of each panel.');
-//      document.getElementById('result').appendChild(link);
-//      solarForm.removeEventListener('submit', handleSubmit);
-
-
-// }
-
-console.log(Math.floor(x));
+    }
 
 }
-// handleSubmit();
 
+let bestPrice = document.getElementById('bestPrice');
+bestPrice.addEventListener('submit', handleSubmit1);
+
+function handleSubmit1(e){
+    e.preventDefault();
+    let bestPrice = e.target.yourAmount.value;
+    this.bestPrice = parseInt(bestPrice);
+    console.log(bestPrice);
+
+    // n : is the amount of kwatts based on the amount of money
+
+    let n = bestPrice/850;
+    let dv1 = document.getElementById('result1');
+    dv1.textContent = "";
+    dv1.textContent = ("Based on your budget we can install a system with " + Math.round(n) + " Kwatts to your facility.");
+
+}
+
+window.addEventListener("load", function(){
+const loader= document.querySelector(".loader");
+loader.className += " hidden";
+});
 
